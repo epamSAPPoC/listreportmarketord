@@ -54,7 +54,12 @@
                     "action": "listreportaction",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
-                    "icon": "https://icons.iconarchive.com/icons/iconsmind/outline/128/File-Chart-icon.png"
+                    "icon": "https://icons.iconarchive.com/icons/iconsmind/outline/128/File-Chart-icon.png",
+                    "indicatorDataSource": {
+                        "dataSource": "mainService",
+                        "path": "/dynamic_dest/zrap_product/sap/opu/odata/sap/ZPP_UI_PRODLISTREPORT_V2/Product/$count",
+                        "refresh": 10
+                    }
                 }
             }
         }
