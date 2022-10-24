@@ -160,7 +160,7 @@
                         "tableSettings": {
                             "multiSelect": true,
                             "selectAll": true,
-                            "type": "ResponsiveTable"
+                            "type": "GridTable"
                         }
                     }
                 },
