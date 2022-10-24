@@ -159,7 +159,8 @@
                         },
                         "tableSettings": {
                             "multiSelect": true,
-                            "selectAll": true
+                            "selectAll": true,
+                            "type": "AnalyticalTable"
                         }
                     }
                 },
