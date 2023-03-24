@@ -1,48 +1,61 @@
 {
-    "name": "listreportmarketord",
-    "version": "0.0.1",
-    "private": true,
-    "description": "List Report of Market Orders",
-    "keywords": [
-        "ui5",
-        "openui5",
-        "sapui5"
-    ],
-    "main": "webapp/index.html",
-    "dependencies": {
-        "package-lock.json": "^1.0.0"
-    },
-    "devDependencies": {
-        "@sap-ux/ui5-middleware-fe-mockserver": "2",
-        "@sap/ui5-builder-webide-extension": "^1.1.8",
-        "@sap/ux-specification": "UI5-1.102",
-        "@sap/ux-ui5-tooling": "1",
-        "@ui5/cli": "^2.14.1",
-        "mbt": "^1.2.18",
-        "ui5-task-zipper": "^0.5.0"
-    },
-    "scripts": {
-        "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
-        "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
-        "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
-        "deploy": "fiori cfDeploy",
-        "deploy-config": "fiori add deploy-config",
-        "start-noflp": "fiori run --open \"index.html?sap-ui-xx-viewCache=false\"",
-        "start-mock": "fiori run --config ./ui5-mock.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
-        "start-variants-management": "fiori run --open \"preview.html?sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
-        "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
-        "build:mta": "rimraf resources mta_archives && mbt build",
-        "undeploy": "cf undeploy listreportnamespace-listreportmarketord --delete-services --delete-service-keys --delete-service-brokers"
-    },
-    "ui5": {
-        "dependencies": [
-            "@sap/ux-ui5-tooling",
-            "@sap-ux/ui5-middleware-fe-mockserver",
-            "@sap/ui5-builder-webide-extension",
-            "ui5-task-zipper",
-            "mbt"
-        ]
-    },
-    "sapux": true,
-    "sapuxLayer": "CUSTOMER_BASE"
+  "name": "listreportmarketord",
+  "version": "0.0.1",
+  "private": true,
+  "description": "List Report of Market Orders",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "main": "webapp/index.html",
+  "dependencies": {
+    "fiori-tools": "^1.3.0",
+    "package-lock.json": "^1.0.0",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@sap-ux/ui5-middleware-fe-mockserver": "2",
+    "@sap/ui5-builder-webide-extension": "^1.1.8",
+    "@sap/ux-specification": "UI5-1.102",
+    "@sap/ux-ui5-tooling": "^1.8.4",
+    "@ui5/cli": "^2.14.17",
+    "mbt": "^1.2.18",
+    "ui5-task-zipper": "^0.5.0"
+  },
+  "scripts": {
+    "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
+    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
+    "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
+    "deploy": "fiori cfDeploy",
+    "deploy-config": "fiori add deploy-config",
+    "start-noflp": "fiori run --open \"index.html?sap-ui-xx-viewCache=false\"",
+    "start-mock": "fiori run --config ./ui5-mock.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#listreportnamespacelistreportmarketord-tile\"",
+    "start-variants-management": "fiori run --open \"preview.html?sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
+    "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
+    "build:mta": "rimraf resources mta_archives && mbt build",
+    "undeploy": "cf undeploy listreportnamespace-listreportmarketord --delete-services --delete-service-keys --delete-service-brokers"
+  },
+  "ui5": {
+    "dependencies": [
+      "@sap/ux-ui5-tooling",
+      "@sap-ux/ui5-middleware-fe-mockserver",
+      "@sap/ui5-builder-webide-extension",
+      "ui5-task-zipper",
+      "mbt"
+    ]
+  },
+  "sapux": true,
+  "sapuxLayer": "CUSTOMER_BASE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaichkina/listreport.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaichkina/listreport/issues"
+  },
+  "homepage": "https://github.com/isaichkina/listreport#readme"
 }
